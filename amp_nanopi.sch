@@ -2369,7 +2369,7 @@ Wickmann</description>
 <clearance class="0" value="0.762"/>
 </class>
 <class number="1" name="230V" width="2.032" drill="1.27">
-<clearance class="1" value="5.08"/>
+<clearance class="1" value="2.54"/>
 </class>
 </classes>
 <parts>
@@ -2396,8 +2396,8 @@ Wickmann</description>
 <instance part="F2" gate="G$1" x="124.46" y="60.96" rot="R90"/>
 <instance part="X2" gate="G$1" x="139.7" y="71.12"/>
 <instance part="X1" gate="G$1" x="139.7" y="45.72"/>
-<instance part="X3" gate="1" x="30.48" y="38.1" rot="R180"/>
-<instance part="X4" gate="1" x="-7.62" y="35.56" rot="MR180"/>
+<instance part="X3" gate="1" x="30.48" y="35.56" rot="MR0"/>
+<instance part="X4" gate="1" x="-7.62" y="33.02"/>
 <instance part="J1" gate="G$1" x="20.32" y="83.82" rot="R180"/>
 <instance part="J2" gate="G$1" x="60.96" y="30.48" rot="R270"/>
 <instance part="J3" gate="G$1" x="10.16" y="66.04" rot="R180"/>
@@ -2429,17 +2429,12 @@ Wickmann</description>
 <wire x1="48.26" y1="83.82" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="V-"/>
 <wire x1="73.66" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X3" gate="1" pin="6"/>
 <wire x1="38.1" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="45.72" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X3" gate="1" pin="14"/>
 <wire x1="38.1" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="35.56" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="X3" gate="1" pin="20"/>
 <wire x1="38.1" y1="27.94" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="27.94" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="X3" gate="1" pin="9"/>
-<wire x1="22.86" y1="40.64" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="40.64" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="20.32" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="15.24" x2="50.8" y2="15.24" width="0.1524" layer="91"/>
@@ -2447,9 +2442,6 @@ Wickmann</description>
 <junction x="50.8" y="27.94"/>
 <junction x="50.8" y="35.56"/>
 <junction x="50.8" y="45.72"/>
-<pinref part="X4" gate="1" pin="12"/>
-<wire x1="0" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
-<junction x="20.32" y="20.32"/>
 <pinref part="S1" gate="1" pin="P"/>
 <wire x1="50.8" y1="73.66" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
 <junction x="50.8" y="50.8"/>
@@ -2463,6 +2455,14 @@ Wickmann</description>
 <pinref part="J3" gate="G$1" pin="PIN2"/>
 <wire x1="12.7" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
 <junction x="50.8" y="68.58"/>
+<pinref part="X4" gate="1" pin="1"/>
+<wire x1="0" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
+<junction x="20.32" y="20.32"/>
+<pinref part="X3" gate="1" pin="15"/>
+<wire x1="20.32" y1="40.64" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="X3" gate="1" pin="6"/>
+<pinref part="X3" gate="1" pin="12"/>
+<pinref part="X3" gate="1" pin="20"/>
 </segment>
 </net>
 <net name="N$4" class="1">
@@ -2510,11 +2510,11 @@ Wickmann</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="X4" gate="1" pin="7"/>
-<wire x1="0" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="33.02" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="PIN1"/>
 <wire x1="15.24" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="X4" gate="1" pin="6"/>
+<wire x1="0" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -2523,8 +2523,8 @@ Wickmann</description>
 <errors>
 <approved hash="113,1,54.2205,78.74,S1,,,,,"/>
 <approved hash="113,1,86.36,40.7882,U1,,,,,"/>
-<approved hash="113,1,30.48,35.3653,X3,,,,,"/>
-<approved hash="113,1,-2.58233,32.8253,X4,,,,,"/>
+<approved hash="113,1,30.48,38.2947,X3,,,,,"/>
+<approved hash="113,1,-2.58233,35.7547,X4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
